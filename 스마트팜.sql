@@ -4,7 +4,7 @@ DROP TABLE crop cascade constraints purge   ;
 DROP TABLE yield cascade constraints purge   ;
 DROP TABLE soildata cascade constraints purge   ;
 DROP TABLE weather cascade constraints purge   ;
-jghhjghg
+
 CREATE TABLE users (
     user_id VARCHAR2(10) PRIMARY KEY,
     pw VARCHAR2(20) NOT NULL,
@@ -71,7 +71,7 @@ commit;
 
 
 INSERT ALL
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U001', 'pw1', '�����', 'user1@farm.com', '010-1234-5601', 'admin')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U001', 'pw1', '�����?', 'user1@farm.com', '010-1234-5601', 'admin')
   INTO users (user_id, pw, name, email, phone, role) VALUES ('U002', 'pw2', '�̼���', 'user2@farm.com', '010-1234-5602', 'admin')
   INTO users (user_id, pw, name, email, phone, role) VALUES ('U003', 'pw3', '������', 'user3@farm.com', '010-1234-5603', 'admin')
   INTO users (user_id, pw, name, email, phone, role) VALUES ('U004', 'pw4', '�ֿ���', 'user4@farm.com', '010-1234-5604', 'admin')
@@ -84,16 +84,16 @@ INSERT ALL
 SELECT * FROM dual;
 
 INSERT ALL
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000001', '����Ư���� ����Ʈ��', '����Ư����', '�����', 'U001', 4309, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000002', '�λ걤���� ����Ʈ��', '�λ걤����', '�̼���', 'U002', 3228, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000003', '���������� ����Ʈ��', '����������', '������', 'U003', 3051, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000004', '���ֱ����� ����Ʈ��', '���ֱ�����', '�ֿ���', 'U004', 4518, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000005', '������ ����Ʈ��', '������', '������', 'U005', 3563, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000006', 'û�ֽ� ����Ʈ��', 'û�ֽ�', '���ϴ�', 'U006', 3501, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000007', '���ֽ� ����Ʈ��', '���ֽ�', '������', 'U007', 3457, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000008', 'â���� ����Ʈ��', 'â����', '�忹��', 'U008', 3285, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000009', '���׽� ����Ʈ��', '���׽�', '���϶�', 'U009', 4508, '����', '���')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000010', '��õ�� ����Ʈ��', '��õ��', '����ȣ', 'U010', 3209, '����', '���')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000001', '����Ư���� ����Ʈ��', '����Ư����', '�����?', 'U001', 4309, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000002', '�λ걤���� ����Ʈ��', '�λ걤����', '�̼���', 'U002', 3228, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000003', '���������� ����Ʈ��', '����������', '������', 'U003', 3051, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000004', '���ֱ����� ����Ʈ��', '���ֱ�����', '�ֿ���', 'U004', 4518, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000005', '������ ����Ʈ��', '������', '������', 'U005', 3563, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000006', 'û�ֽ� ����Ʈ��', 'û�ֽ�', '���ϴ�', 'U006', 3501, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000007', '���ֽ� ����Ʈ��', '���ֽ�', '������', 'U007', 3457, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000008', 'â���� ����Ʈ��', 'â����', '�忹��', 'U008', 3285, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000009', '���׽� ����Ʈ��', '���׽�', '���϶�', 'U009', 4508, '����', '���?')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000010', '��õ�� ����Ʈ��', '��õ��', '����ȣ', 'U010', 3209, '����', '���?')
 SELECT * FROM dual;
 
 INSERT ALL
