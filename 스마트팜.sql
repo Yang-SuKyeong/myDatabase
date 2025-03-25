@@ -4,7 +4,7 @@ DROP TABLE crop cascade constraints purge   ;
 DROP TABLE yield cascade constraints purge   ;
 DROP TABLE soildata cascade constraints purge   ;
 DROP TABLE weather cascade constraints purge   ;
-
+jghhjghg
 CREATE TABLE users (
     user_id VARCHAR2(10) PRIMARY KEY,
     pw VARCHAR2(20) NOT NULL,
@@ -71,42 +71,42 @@ commit;
 
 
 INSERT ALL
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U001', 'pw1', '±è¹ÎÁØ', 'user1@farm.com', '010-1234-5601', 'admin')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U002', 'pw2', 'ÀÌ¼­¿¬', 'user2@farm.com', '010-1234-5602', 'admin')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U003', 'pw3', '¹ÚÁöÈÆ', 'user3@farm.com', '010-1234-5603', 'admin')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U004', 'pw4', 'ÃÖ¿¹¸°', 'user4@farm.com', '010-1234-5604', 'admin')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U005', 'pw5', 'Á¤¿ìÁø', 'user5@farm.com', '010-1234-5605', 'admin')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U006', 'pw6', '°­ÇÏ´Ã', 'user6@farm.com', '010-1234-5606', 'worker')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U007', 'pw7', 'À±ÁöÈÄ', 'user7@farm.com', '010-1234-5607', 'worker')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U008', 'pw8', 'Àå¿¹Àº', 'user8@farm.com', '010-1234-5608', 'worker')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U009', 'pw9', 'Á¶ÇÏ¶÷', 'user9@farm.com', '010-1234-5609', 'worker')
-  INTO users (user_id, pw, name, email, phone, role) VALUES ('U010', 'pw10', 'ÇÑÁöÈ£', 'user10@farm.com', '010-1234-5610', 'worker')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U001', 'pw1', 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'user1@farm.com', '010-1234-5601', 'admin')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U002', 'pw2', 'ï¿½Ì¼ï¿½ï¿½ï¿½', 'user2@farm.com', '010-1234-5602', 'admin')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U003', 'pw3', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'user3@farm.com', '010-1234-5603', 'admin')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U004', 'pw4', 'ï¿½Ö¿ï¿½ï¿½ï¿½', 'user4@farm.com', '010-1234-5604', 'admin')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U005', 'pw5', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'user5@farm.com', '010-1234-5605', 'admin')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U006', 'pw6', 'ï¿½ï¿½ï¿½Ï´ï¿½', 'user6@farm.com', '010-1234-5606', 'worker')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U007', 'pw7', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'user7@farm.com', '010-1234-5607', 'worker')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U008', 'pw8', 'ï¿½å¿¹ï¿½ï¿½', 'user8@farm.com', '010-1234-5608', 'worker')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U009', 'pw9', 'ï¿½ï¿½ï¿½Ï¶ï¿½', 'user9@farm.com', '010-1234-5609', 'worker')
+  INTO users (user_id, pw, name, email, phone, role) VALUES ('U010', 'pw10', 'ï¿½ï¿½ï¿½ï¿½È£', 'user10@farm.com', '010-1234-5610', 'worker')
 SELECT * FROM dual;
 
 INSERT ALL
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000001', '¼­¿ïÆ¯º°½Ã ½º¸¶Æ®ÆÊ', '¼­¿ïÆ¯º°½Ã', '±è¹ÎÁØ', 'U001', 4309, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000002', 'ºÎ»ê±¤¿ª½Ã ½º¸¶Æ®ÆÊ', 'ºÎ»ê±¤¿ª½Ã', 'ÀÌ¼­¿¬', 'U002', 3228, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000003', '´ëÀü±¤¿ª½Ã ½º¸¶Æ®ÆÊ', '´ëÀü±¤¿ª½Ã', '¹ÚÁöÈÆ', 'U003', 3051, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000004', '±¤ÁÖ±¤¿ª½Ã ½º¸¶Æ®ÆÊ', '±¤ÁÖ±¤¿ª½Ã', 'ÃÖ¿¹¸°', 'U004', 4518, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000005', '¼ö¿ø½Ã ½º¸¶Æ®ÆÊ', '¼ö¿ø½Ã', 'Á¤¿ìÁø', 'U005', 3563, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000006', 'Ã»ÁÖ½Ã ½º¸¶Æ®ÆÊ', 'Ã»ÁÖ½Ã', '°­ÇÏ´Ã', 'U006', 3501, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000007', 'ÀüÁÖ½Ã ½º¸¶Æ®ÆÊ', 'ÀüÁÖ½Ã', 'À±ÁöÈÄ', 'U007', 3457, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000008', 'Ã¢¿ø½Ã ½º¸¶Æ®ÆÊ', 'Ã¢¿ø½Ã', 'Àå¿¹Àº', 'U008', 3285, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000009', 'Æ÷Ç×½Ã ½º¸¶Æ®ÆÊ', 'Æ÷Ç×½Ã', 'Á¶ÇÏ¶÷', 'U009', 4508, 'Àü±â', '¾ç¾×')
-  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000010', 'ÃáÃµ½Ã ½º¸¶Æ®ÆÊ', 'ÃáÃµ½Ã', 'ÇÑÁöÈ£', 'U010', 3209, 'Àü±â', '¾ç¾×')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000001', 'ï¿½ï¿½ï¿½ï¿½Æ¯ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½Æ¯ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½', 'U001', 4309, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000002', 'ï¿½Î»ê±¤ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½Î»ê±¤ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ì¼ï¿½ï¿½ï¿½', 'U002', 3228, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000003', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'U003', 3051, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000004', 'ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½Ö¿ï¿½ï¿½ï¿½', 'U004', 4518, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000005', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'U005', 3563, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000006', 'Ã»ï¿½Ö½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'Ã»ï¿½Ö½ï¿½', 'ï¿½ï¿½ï¿½Ï´ï¿½', 'U006', 3501, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000007', 'ï¿½ï¿½ï¿½Ö½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½ï¿½Ö½ï¿½', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½', 'U007', 3457, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000008', 'Ã¢ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'Ã¢ï¿½ï¿½ï¿½ï¿½', 'ï¿½å¿¹ï¿½ï¿½', 'U008', 3285, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000009', 'ï¿½ï¿½ï¿½×½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½ï¿½×½ï¿½', 'ï¿½ï¿½ï¿½Ï¶ï¿½', 'U009', 4508, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
+  INTO farm (farm_id, name, location, owner, user_id, scale, heating, cultivation) VALUES ('PF_0000010', 'ï¿½ï¿½Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½', 'ï¿½ï¿½Ãµï¿½ï¿½', 'ï¿½ï¿½ï¿½ï¿½È£', 'U010', 3209, 'ï¿½ï¿½ï¿½ï¿½', 'ï¿½ï¿½ï¿½')
 SELECT * FROM dual;
 
 INSERT ALL
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000001', 'Åä¸¶Åä', '2024-11-23', '2025-04-09', '2025-05-08', 'PF_0000001')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000002', 'Åä¸¶Åä', '2024-08-27', '2024-12-22', '2024-12-24', 'PF_0000002')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000003', 'Åä¸¶Åä', '2023-04-06', '2023-07-18', '2023-07-26', 'PF_0000003')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000004', 'µþ±â', '2024-07-28', '2024-11-07', '2024-11-30', 'PF_0000004')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000005', 'ÆÄÇÁ¸®Ä«', '2023-08-14', '2023-12-10', '2023-12-29', 'PF_0000005')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000006', '»óÃß', '2023-01-07', '2023-05-25', '2023-06-20', 'PF_0000006')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000007', 'ÆÄÇÁ¸®Ä«', '2024-12-15', '2025-04-11', '2025-04-22', 'PF_0000007')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000008', 'ÆÄÇÁ¸®Ä«', '2023-06-09', '2023-09-20', '2023-10-15', 'PF_0000008')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000009', 'Åä¸¶Åä', '2023-04-15', '2023-07-19', '2023-08-01', 'PF_0000009')
-  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000010', 'ÆÄÇÁ¸®Ä«', '2024-01-03', '2024-05-26', '2024-06-07', 'PF_0000010')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000001', 'ï¿½ä¸¶ï¿½ï¿½', '2024-11-23', '2025-04-09', '2025-05-08', 'PF_0000001')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000002', 'ï¿½ä¸¶ï¿½ï¿½', '2024-08-27', '2024-12-22', '2024-12-24', 'PF_0000002')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000003', 'ï¿½ä¸¶ï¿½ï¿½', '2023-04-06', '2023-07-18', '2023-07-26', 'PF_0000003')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000004', 'ï¿½ï¿½ï¿½ï¿½', '2024-07-28', '2024-11-07', '2024-11-30', 'PF_0000004')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000005', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«', '2023-08-14', '2023-12-10', '2023-12-29', 'PF_0000005')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000006', 'ï¿½ï¿½ï¿½ï¿½', '2023-01-07', '2023-05-25', '2023-06-20', 'PF_0000006')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000007', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«', '2024-12-15', '2025-04-11', '2025-04-22', 'PF_0000007')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000008', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«', '2023-06-09', '2023-09-20', '2023-10-15', 'PF_0000008')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000009', 'ï¿½ä¸¶ï¿½ï¿½', '2023-04-15', '2023-07-19', '2023-08-01', 'PF_0000009')
+  INTO crop (crop_id, name, planting_date, harvest_date, shipping_date, farm_id) VALUES ('CF_0000010', 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä«', '2024-01-03', '2024-05-26', '2024-06-07', 'PF_0000010')
 SELECT * FROM dual;
 
 INSERT ALL
